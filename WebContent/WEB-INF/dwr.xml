@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+  <allow>
+    <create creator="new" javascript="Catalogue">
+      <param name="class" value="developerworks.ajax.store.CatalogueDAO"/>
+      <include method="getItem"/>
+      <include method="findItems"/>
+    </create>
+    <create creator="new" scope="session" javascript="Cart">
+      <param name="class" value="developerworks.ajax.store.Cart"/>
+      <include method="addItemToCart"/>
+      <include method="getFormattedTotalPrice"/>
+      <include method="getCart"/>
+    </create>
+    <convert converter="bean" match="developerworks.ajax.store.Item">
+      <param name="include" value="id,name,description,formattedPrice"/>
+    </convert>
+    <convert converter="bean" match="developerworks.ajax.store.Cart">
+      <param name="include" value="simpleContents,formattedTotalPrice"/>
+    </convert>
+  </allow>
+</dwr>

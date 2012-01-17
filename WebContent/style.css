@@ -1,0 +1,53 @@
+html {
+  font-size: 75%;
+}
+
+* {
+  font-family: verdana, sans-serif;
+}
+
+tr {
+  border-bottom: 1px solid #999;
+}
+
+h1 {
+  margin: 0px 8px;
+}
+
+div#cart {
+  float:right;
+  background: #fde;
+  border: 1px solid #cab;
+  margin: 0px 8px;
+  padding: 4px;
+}
+
+form#searchform {
+  background: #dfb;
+  border: 1px solid #ac8;
+  text-align: center;
+  margin: 8px;
+  padding: 4px;
+}
+
+div#catalogue {
+  visibility: hidden;
+  margin: 8px;
+}
+
+div#catalogue table {
+  border-collapse: collapse;
+}
+
+div#catalogue tr {
+  background: #defaff;
+}
+
+div#catalogue td, div#catalogue th {
+  border: 1px solid #aecacf;
+  padding: 4px;
+}
+
+ul#contents {
+  list-style-type: none;
+}
