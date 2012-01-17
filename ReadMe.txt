@@ -2,7 +2,7 @@ dwr应用
 DWR is an Ajax remoting framework for Java to make it easy for web pages to interact with Java classes.
 http://directwebremoting.org/dwr-demo/
 
-这两天学了下DWR，现在总结一下。
+
 DWR是方便使用AJAX连接JS和JAVA的的一个框架,把服务器端 Java 对象的方法公开给 JavaScript 代码。
 如果是用dwr2.0的jar包，还需要同时导入log4j.jar和commons-loggin.jar,勿忘!!
 web.xml和dwr.xml放在WEB-INF下!
